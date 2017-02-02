@@ -16,26 +16,23 @@ body {
   font-family: Tahoma, Geneva, sans-serif;
 }
 /*nav styles*/
-nav {
+nav ul {
   background-color: rgb(125, 120, 89);
   line-height: 3em;
+  list-style-type: none;
 }
-nav li{
-    list-style-type: none;
-}
-nav li:hover, nav li:active{
-  background-color: rgb(131, 121, 36);
-  list-style-image: url(wheelmarker.png);
-}
-a{
+nav ul li a{
   color: white;
-  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
-a:hover, a:active{
-  color: white;
-  opacity: 1;
-
+nav ul li a:hover{
+  background-color: rgb(131, 121, 36);
+  color: yellow;
+  color: rgba(255, 255, 255, 1.0);
+}
+nav ul li:hover{
+list-style-image: url(wheelmarker.png);
 }
 /*article header styles*/
 #articleheader {
@@ -44,4 +41,43 @@ a:hover, a:active{
   font-kerning: 7px;
   text-align: center;
 }
-#sectionleft
+section#leftsection{
+  font-size: 22px;
+}
+section#leftsection p#firstpar:first-line{
+  text-transform: uppercase;
+}
+/*h# heading styles*/
+section#rightsection h1{
+  font-size: 22px;
+  font-kerning: 3px;
+  font-weight: normal;
+  text-align: center;
+}
+section#rightsection h2{
+  font-size: 18px;
+  text-align: right;
+  font-weight: normal;
+}
+section#rightsection p{
+  color: gray;
+  font-size: 14px;
+  text-align: justify;
+}
+
+
+/*blockquote styles*/
+blockquote{
+  background-color: rgb(131, 121, 36);
+  color: white;
+  font-size: 16px;
+  font-family: "Comic Sans MS", times, cursive;
+}
+blockquote p::after, blockquote p::before{
+  content: '"'
+}
+footer address{
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+}
