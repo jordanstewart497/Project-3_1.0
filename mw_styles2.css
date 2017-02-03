@@ -47,32 +47,34 @@ nav ul li:hover {
 
 /*article header styles*/
 
-#articleheader {
+#articleheader2 {
     font-size: 18px;
     font-weight: normal;
     font-kerning: 7px;
     text-align: center;
 }
 
-section#leftsection {
+section#leftsection2 {
     font-size: 22px;
+    text-align: justify;
 }
 
-section#leftsection p#firstpar:first-line {
+section#leftsection2 p#firstpar:first-line {
     text-transform: uppercase;
 }
 
 
 /*h# heading styles*/
 
-section#rightsection h1 {
+section#rightsection2 h1 {
     font-size: 22px;
     font-kerning: 3px;
     font-weight: normal;
     text-align: center;
+    ;
 }
 
-section#rightsection h2 {
+section#rightsection2 h2 {
     font-size: 18px;
     text-align: right;
     font-weight: normal;
